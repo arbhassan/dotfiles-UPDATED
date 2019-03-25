@@ -1,0 +1,50 @@
+search eckha
+search prese
+open_with mpv f
+open_with mpv
+open_with q
+open_with zathura
+find joh
+find et
+search node
+search link
+search heap
+open_with FBReader f
+open_with engrampa
+rename app.js
+rename app.mjs
+search 20
+find first
+search first
+open_with atril f
+open_with xreader 
+open_with ebook-viewer f
+find fla
+shell q
+hide_console_info 
+meta 
+display_file 
+update_preview 
+sort date
+sort default
+sort mtime
+change_mode 
+change_mode multipane
+find 
+open_with xreader f
+open_with zathura f
+open_with nano
+open_with nvim
+sudo delete 
+open_with engrampa f
+Q
+search draw
+rename 
+rename
+open_with 
+rename random.js
+delete 
+open_with termite
+rename scripts-opts
+
+move 

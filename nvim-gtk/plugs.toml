@@ -1,0 +1,6 @@
+enabled = false
+
+[[plugs]]
+name = "vim-airline"
+url = "https://github.com/bling/vim-airline"
+removed = false

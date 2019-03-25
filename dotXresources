@@ -1,0 +1,36 @@
+URxvt*scrollBar: false
+URxvt*font: xft:Fira Code Medium:pixelsize=16
+URxvt.loginShell: true
+URxvt.geometry: 85x16
+
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! =================
+! rofi
+! =================
+
+rofi.separator-style: 	solid
+rofi.font:				      "Fira Code Medium" 16
+rofi.bw:                0
+rofi.padding:           10
+rofi.hide-scrollbar:    true
+rofi.lines: 5
+rofi.fullscreen: false
+! 
+------------------------------------------------------------------------------
+! ROFI Color theme
+! Copyright: Rasmus Steinke
+! 
+------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #2f343e, #2f343e, #1e2529
+rofi.color-normal: #2f343e, #c1c1c1, #2f343e, #394249, #ffffff
+rofi.color-active: #2f343e, #80cbc4, #2f343e, #394249, #80cbc4
+rofi.color-urgent: #2f343e, #ff1844, #2f343e, #394249, #ff1844
+
