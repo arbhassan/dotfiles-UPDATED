@@ -15,9 +15,20 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term termite
+
+
+input "2:8:AlpsPS/2_ALPS_GlidePoint" {
+    tap enabled
+    natural_scroll enabled
+}
+
+
 # Your preferred application launcher
 # Note: it's recommended that you pass the final command to sway
-set $menu dmenu_path | dmenu | xargs swaymsg exec
+#set $menu dmenu_path | dmenu | xargs swaymsg exec
+set $menu rofi -show drun
+
+default_border pixel 1 
 
 ### Output configuration
 #
@@ -171,6 +182,20 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-mute 0 false"; exec --no-startup-id "pactl set-sink-volume 0 +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-mute 0 false"; exec --no-startup-id "pactl set-sink-volume 0 -5%"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 0 toggle"
+
+
+# Screen brightness controls ()thanks to acpilight
+
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+
+#
+
 #
 # Resizing containers:
 #
@@ -207,6 +232,7 @@ bar {
     # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
 
+    swaybar_command waybar
     colors {
         statusline #ffffff
         background #323232
